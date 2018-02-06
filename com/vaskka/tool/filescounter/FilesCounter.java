@@ -29,7 +29,7 @@ class FilesCounter {
 		while (true) {
 			try {
 				num = input.nextInt();
-				break;
+ 				break;
 			}
 			catch (InputMismatchException e) {
 				System.out.println("输入的数字格式不正确，请重新输入...");
