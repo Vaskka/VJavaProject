@@ -6,9 +6,9 @@ package com.vaskka.learn.leetcode;
  *
  */
 public class Solve {
-	protected static int id;
+	protected  int id;
 	
-	protected static String name; 
+	protected  String name; 
 	
 	
 }
