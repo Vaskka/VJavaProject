@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author Vaskka
+ *
+ */
+module LeetcodeExercise {
+}
