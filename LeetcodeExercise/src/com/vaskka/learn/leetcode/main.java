@@ -1,5 +1,7 @@
 package com.vaskka.learn.leetcode;
 
+import java.util.*;
+
 import com.vaskka.learn.leetcode.solve.JewelsAndStones;
 import com.vaskka.learn.leetcode.solve.UniqueEmail;
 
@@ -10,12 +12,17 @@ public class main {
 	}
 	
 	public static void main(String[] args) {
-		UniqueEmail t = new UniqueEmail();
+		List<Integer> l  = new LinkedList<>();
+		l.add(1);
+		l.add(2);
+		l.add(3);
+		l.add(10);
 		
-		String[] l = new String[3];
-		l[0] = "test.email+alex@leetcode.com";
-		l[1] = "test.e.mail+bob.cathy@leetcode.com";
-		l[2] = "testemail+david@lee.tcode.com";
-		L(t.numUniqueEmails(l));
+		l.add(1, 2000);
+		
+		for (int i : l) {
+			L(i);
+		}
+		
 	}
 }
