@@ -1,8 +1,6 @@
 package com.vaskka.learn.leetcode.solve;
 
 import java.util.ArrayList;
-import java.util.Hashtable;
-import java.util.LinkedList;
 import java.util.List;
 
 import com.vaskka.learn.leetcode.Solve;
@@ -13,22 +11,6 @@ public class UniqueEmail extends Solve {
 		name = "独特的Email";
 	}
 	
-	/**
-	 * 处理点
-	 * @param s
-	 * @return String 
-	 */
-	private String stripPoint(String s) {
-		StringBuilder sb = new StringBuilder();
-		
-		for (char c : s.toCharArray()) {
-			if (c != '.') {
-				sb.append(c);
-			}
-		}
-		
-		return sb.toString();
-	}
 	
 	/**
 	 * 处理加号后面省略
