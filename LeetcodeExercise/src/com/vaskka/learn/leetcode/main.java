@@ -2,8 +2,7 @@ package com.vaskka.learn.leetcode;
 
 import java.util.*;
 
-import com.vaskka.learn.leetcode.solve.JewelsAndStones;
-import com.vaskka.learn.leetcode.solve.UniqueEmail;
+import com.vaskka.learn.leetcode.solve.*;
 
 public class main {
 
@@ -12,17 +11,21 @@ public class main {
 	}
 	
 	public static void main(String[] args) {
-		List<Integer> l  = new LinkedList<>();
-		l.add(1);
-		l.add(2);
-		l.add(3);
-		l.add(10);
+		SubsetsWithDup s = new SubsetsWithDup();
 		
-		l.add(1, 2000);
+		int[] nums = {1, 2, 2};
 		
-		for (int i : l) {
-			L(i);
+		List<List<Integer>> r = s.subsetsWithDup(nums);
+		
+		for (List<Integer> subList : r) {
+			for (int i : subList) {
+				System.out.print(i);
+				System.out.print(' ');
+				
+			}
+			L("");
 		}
 		
+		L("ok");
 	}
 }
