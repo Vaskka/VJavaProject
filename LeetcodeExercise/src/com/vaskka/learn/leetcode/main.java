@@ -1,7 +1,8 @@
 package com.vaskka.learn.leetcode;
 
-import com.vaskka.learn.leetcode.solve.JewelsAndStones;
-import com.vaskka.learn.leetcode.solve.UniqueEmail;
+import java.util.*;
+
+import com.vaskka.learn.leetcode.solve.*;
 
 public class main {
 
@@ -10,12 +11,21 @@ public class main {
 	}
 	
 	public static void main(String[] args) {
-		UniqueEmail t = new UniqueEmail();
+		SubsetsWithDup s = new SubsetsWithDup();
 		
-		String[] l = new String[3];
-		l[0] = "test.email+alex@leetcode.com";
-		l[1] = "test.e.mail+bob.cathy@leetcode.com";
-		l[2] = "testemail+david@lee.tcode.com";
-		L(t.numUniqueEmails(l));
+		int[] nums = {1, 2, 2};
+		
+		List<List<Integer>> r = s.subsetsWithDup(nums);
+		
+		for (List<Integer> subList : r) {
+			for (int i : subList) {
+				System.out.print(i);
+				System.out.print(' ');
+				
+			}
+			L("");
+		}
+		
+		L("ok");
 	}
 }
