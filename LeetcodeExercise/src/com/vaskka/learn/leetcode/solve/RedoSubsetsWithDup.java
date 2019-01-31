@@ -5,9 +5,6 @@ import java.util.HashSet;
 import java.util.List;
 
 public class RedoSubsetsWithDup {
-
-	 public List<List<Integer>> subsetsWithDup(int[] nums) {
-
-	 }
+// 待重做，考虑背包问题，dp
 
 }

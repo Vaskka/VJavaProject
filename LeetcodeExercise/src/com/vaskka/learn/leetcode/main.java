@@ -11,21 +11,17 @@ public class main {
 	}
 	
 	public static void main(String[] args) {
-		SubsetsWithDup s = new SubsetsWithDup();
+		WordGo w = new WordGo();
 		
-		int[] nums = {1, 2, 2};
+		List<String> l = new ArrayList<>();
 		
-		List<List<Integer>> r = s.subsetsWithDup(nums);
+		l.add("hot");
+		l.add("dot");
+		l.add("dog");
+		l.add("lot");
+		l.add("log");
+		l.add("cog");
 		
-		for (List<Integer> subList : r) {
-			for (int i : subList) {
-				System.out.print(i);
-				System.out.print(' ');
-				
-			}
-			L("");
-		}
-		
-		L("ok");
+		w.ladderLength("hit", "cog", l);
 	}
 }
