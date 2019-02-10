@@ -11,17 +11,10 @@ public class main {
 	}
 	
 	public static void main(String[] args) {
-		WordGo w = new WordGo();
+		int[] A = {5, 1, 5, 2, 5, 3, 5, 4};
 		
-		List<String> l = new ArrayList<>();
+		RepeatedNTimes t = new RepeatedNTimes();
 		
-		l.add("hot");
-		l.add("dot");
-		l.add("dog");
-		l.add("lot");
-		l.add("log");
-		l.add("cog");
-		
-		w.ladderLength("hit", "cog", l);
+		t.repeatedNTimes(A);
 	}
 }
