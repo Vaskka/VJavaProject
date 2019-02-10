@@ -24,8 +24,8 @@ public class RepeatedNTimes {
         }
         
         return -1;
-        
-        
+       
     }
-
+   
+      
 }
